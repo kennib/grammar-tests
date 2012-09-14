@@ -1,7 +1,13 @@
 #!/usr/bin/python
 
-from os import system
 import subprocess
+import sys, os
+
+class echo():
+	def write(self, string):
+		subprocess.call('echo -ne "%s"' % string, shell=True)
+
+sys.stdout = echo()
 
 calls = {
     1: 'diff <(%(script)s %(name)s.grammar) <(cat %(name)s.sets)',
@@ -26,8 +32,17 @@ ebnf_tests = [
 	'simple',
 ]
 
+def blue(string):
+	return "\e[1;34m"+string+"\e[0m"
+
+def red(string):
+	return "\e[1;31m"+string+"\e[0m"
+
+def green(string):
+	return "\e[1;32m"+string+"\e[0m"
+
 for i in range(1, 5):
-    print 'Testing question %d...' % i
+    print blue('Testing question %d...' % i)
     if i == 4:
         tests = ebnf_tests
     else:
@@ -37,4 +52,10 @@ for i in range(1, 5):
     for test in tests:
         call = calls[i] % {'script': script, 'name': 'tests/%s' % test}
         print '  $ %s' % call
-        subprocess.call('bash -c "%s"' % call, shell=True)
+        
+        result = os.popen("bash -c '%s'" % call).read()
+        
+        if not result:
+        	print green("passed")
+        else:
+        	print red(result)
