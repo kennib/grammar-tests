@@ -4,9 +4,9 @@ from os import system
 import subprocess
 
 calls = {
-    1: 'diff <(%(script)s %(name)s.grammar | sort) <(cat %(name)s.sets | sort)',
+    1: 'diff <(%(script)s %(name)s.grammar) <(cat %(name)s.sets)',
     2: 'diff <(%(script)s %(name)s.grammar | sort) <(cat %(name)s.table | sort)',
-    3: '%(script)s %(name)s.grammar %(name)s.input | diff - %(name)s.output',
+    3: 'diff <(%(script)s %(name)s.grammar %(name)s.input | sort) <(cat %(name)s.output | sort)',
     4: 'diff <(%(script)s %(name)s.ebnf | sort) <(cat %(name)s.bnf | sort)',
 }
 
