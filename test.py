@@ -11,7 +11,7 @@ calls = {
 }
 
 grammar_tests = ['isLL1', 'circular', 'trivial', 'notLL1', 'tricky']
-ebnf_tests = ['0or1', 'simple']
+ebnf_tests = ['0or1', '0orMore', 'simple']
 
 for i in range(1, 5):
     print 'Testing question %d...' % i
