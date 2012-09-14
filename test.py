@@ -29,6 +29,7 @@ ebnf_tests = [
 	'0or1',
 	'0orMore',
 	'or',
+	'binary',
 	'simple',
 ]
 
