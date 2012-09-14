@@ -1,0 +1,13 @@
+S ::= L is a A programming language
+L ::= L1
+L1 ::= python
+L1 ::= java
+L1 ::= lisp
+L1 ::= haskell
+L1 ::= epsilon
+A ::= A1
+A1 ::= fun
+A1 ::= verbose
+A1 ::= crazy
+A1 ::= hipster
+A1 ::= epsilon

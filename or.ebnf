@@ -1,0 +1,3 @@
+S ::= L is a A programming language
+L ::= [ python | java | lisp | haskell ]
+A ::= [ fun | verbose | crazy | hipster ]
