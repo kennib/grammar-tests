@@ -1,12 +1,12 @@
 First:
   A -> a
-  C -> c
   B -> b
+  C -> c
   D -> d epsilon
   S -> a
 Follow:
   A -> b
-  C -> $ d
   B -> c
+  C -> $ d
   D -> $
   S -> $
