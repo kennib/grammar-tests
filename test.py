@@ -10,8 +10,21 @@ calls = {
     4: 'diff <(%(script)s %(name)s.ebnf | sort) <(cat %(name)s.bnf | sort)',
 }
 
-grammar_tests = ['isLL1', 'circular', 'trivial', 'notLL1', 'tricky']
-ebnf_tests = ['0or1', '0orMore', 'or', 'simple']
+grammar_tests = [
+	'trivial',
+	'easy',
+	'isLL1',
+	'notLL1',
+	'circular',
+	'tricky',
+]
+
+ebnf_tests = [
+	'0or1',
+	'0orMore',
+	'or',
+	'simple',
+]
 
 for i in range(1, 5):
     print 'Testing question %d...' % i

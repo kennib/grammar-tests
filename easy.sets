@@ -1,0 +1,12 @@
+First:
+  A -> a
+  C -> c
+  B -> b
+  D -> d epsilon
+  S -> a
+Follow:
+  A -> b
+  C -> $ d
+  B -> c
+  D -> $
+  S -> $
