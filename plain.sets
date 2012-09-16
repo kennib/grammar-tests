@@ -1,0 +1,6 @@
+First:
+  A -> a
+  S -> a
+Follow:
+  A -> !
+  S -> $
