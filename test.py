@@ -12,7 +12,7 @@ sys.stdout = echo()
 calls = {
     1: 'diff <(%(script)s %(name)s.grammar) <(cat %(name)s.sets)',
     2: 'diff <(%(script)s %(name)s.grammar | sort) <(cat %(name)s.table | sort)',
-    3: 'diff <(%(script)s %(name)s.grammar %(name)s.input | sort) <(cat %(name)s.output | sort)',
+    3: 'diff <(%(script)s %(name)s.grammar %(name)s.input) <(cat %(name)s.output)',
     4: 'diff <(%(script)s %(name)s.ebnf | sort) <(cat %(name)s.bnf | sort)',
 }
 
@@ -21,6 +21,7 @@ grammar_tests = [
 	'easy',
 	'isLL1',
 	'notLL1',
+	'binary',
 	'circular',
 	'tricky',
 ]
