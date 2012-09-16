@@ -29,6 +29,7 @@ grammar_tests = [
 ]
 
 ebnf_tests = [
+	'trivial',
 	'0or1',
 	'0orMore',
 	'or',
