@@ -19,6 +19,7 @@ calls = {
 
 grammar_tests = [
 	'trivial',
+	'static',
 	'plain',
 	'easy',
 	'medium',
