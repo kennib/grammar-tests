@@ -5,6 +5,7 @@ import sys, os
 
 class echo():
 	def write(self, string):
+		string = string.replace('"', '\\"')
 		subprocess.call('echo -ne "%s"' % string, shell=True)
 
 sys.stdout = echo()
