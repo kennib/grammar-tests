@@ -27,6 +27,7 @@ grammar_tests = [
 	'alsonotLL1',
 	'binary',
 	'recursive',
+	'variable',
 	'circular',
 	'tricky',
 ]
@@ -40,6 +41,7 @@ ebnf_tests = [
 	'simple',
 	'multiple',
 	'inside',
+	'variable',
 	'recursive',
 	'circular',
 ]
