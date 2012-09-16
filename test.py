@@ -26,6 +26,7 @@ grammar_tests = [
 	'notLL1',
 	'alsonotLL1',
 	'binary',
+	'recursive',
 	'circular',
 	'tricky',
 ]
