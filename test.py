@@ -31,6 +31,10 @@ ebnf_tests = [
 	'or',
 	'binary',
 	'simple',
+	'multiple',
+	'inside',
+	'recursive',
+	'circular',
 ]
 
 def blue(string):
