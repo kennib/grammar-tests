@@ -1,0 +1,5 @@
+S ::= b D B
+B ::= D B
+B ::= epsilon
+D ::= 0
+D ::= 1
