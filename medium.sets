@@ -1,0 +1,12 @@
+First:
+  A -> a
+  H -> h
+  S -> w
+  T -> epsilon t
+  W -> w
+Follow:
+  A -> ! t
+  H -> a
+  S -> $
+  T -> !
+  W -> h

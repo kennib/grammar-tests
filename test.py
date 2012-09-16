@@ -21,6 +21,7 @@ grammar_tests = [
 	'trivial',
 	'plain',
 	'easy',
+	'medium',
 	'isLL1',
 	'notLL1',
 	'binary',

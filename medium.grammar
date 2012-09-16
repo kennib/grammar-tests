@@ -1,0 +1,6 @@
+S ::= W H A T !
+W ::= w
+H ::= h
+A ::= a
+T ::= t
+T ::= epsilon
