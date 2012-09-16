@@ -1,0 +1,14 @@
+First:
+  A -> a b c d e f g h i j k l m n o p q r s t u v w x y z
+  F -> _ a b c d e f g h i j k l m n o p q r s t u v w x y z
+  G -> 0 1 2 3 4 5 6 7 8 9 _ a b c d e epsilon f g h i j k l m n o p q r s t u v w x y z
+  N -> 0 1 2 3 4 5 6 7 8 9
+  S -> _ a b c d e f g h i j k l m n o p q r s t u v w x y z
+  U -> _
+Follow:
+  A -> $ 0 1 2 3 4 5 6 7 8 9 _ a b c d e f g h i j k l m n o p q r s t u v w x y z
+  F -> $ 0 1 2 3 4 5 6 7 8 9 _ a b c d e f g h i j k l m n o p q r s t u v w x y z
+  G -> $
+  N -> $ 0 1 2 3 4 5 6 7 8 9 _ a b c d e f g h i j k l m n o p q r s t u v w x y z
+  S -> $
+  U -> $ 0 1 2 3 4 5 6 7 8 9 _ a b c d e f g h i j k l m n o p q r s t u v w x y z
