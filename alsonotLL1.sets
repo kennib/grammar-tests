@@ -1,0 +1,4 @@
+First:
+  S -> m
+Follow:
+  S -> $

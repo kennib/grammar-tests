@@ -24,6 +24,7 @@ grammar_tests = [
 	'medium',
 	'isLL1',
 	'notLL1',
+	'alsonotLL1',
 	'binary',
 	'circular',
 	'tricky',
