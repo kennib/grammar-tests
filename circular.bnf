@@ -1,0 +1,7 @@
+A ::= w B
+C ::= o A
+S ::= A
+B ::= C B1
+B1 ::= B1 A
+B1 ::= epsilon
+B1 ::= B1 B

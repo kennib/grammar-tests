@@ -1,0 +1,3 @@
+S ::= nyan S1
+S1 ::= S1 S
+S1 ::= epsilon
