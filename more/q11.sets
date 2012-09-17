@@ -1,0 +1,6 @@
+First:
+  F -> a epsilon
+  S -> a epsilon l
+Follow:
+  F -> $ p r
+  S -> $ p

@@ -1,0 +1,8 @@
+First:
+  A -> a
+  B -> b
+  S -> a
+Follow:
+  A -> $ b
+  B -> a b
+  S -> $

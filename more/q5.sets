@@ -1,0 +1,10 @@
+First:
+  A -> e epsilon o
+  B -> e o
+  C -> e o
+  S -> e o
+Follow:
+  A -> e o
+  B -> c e o
+  C -> $ g
+  S -> $

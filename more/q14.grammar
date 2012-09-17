@@ -1,0 +1,7 @@
+S ::= A B C
+A ::= epsilon
+A ::= B c d
+B ::= b
+B ::= A e
+B ::= C g
+C ::= A o

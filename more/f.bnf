@@ -1,0 +1,7 @@
+S2 ::= c
+S2 ::= epsilon
+S2 ::= d
+S2 ::= e
+S ::= a S1 g
+S1 ::= b S2 f
+S1 ::= epsilon

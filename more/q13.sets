@@ -1,0 +1,10 @@
+First:
+   A -> a
+   B -> a
+   C -> a
+   S -> a
+Follow:
+   A -> a e o
+   B -> a c
+   C -> $ g
+   S -> $

@@ -1,0 +1,3 @@
+S ::= S1 morning !
+S1 ::= good
+S1 ::= epsilon

@@ -33,6 +33,8 @@ grammar_tests = [
 	'tricky',
 ]
 
+grammar_tests += ['more/q'+str(x) for x in xrange(1, 16)]
+
 ebnf_tests = [
 	'trivial',
 	'0or1',
@@ -46,6 +48,8 @@ ebnf_tests = [
 	'recursive',
 	'circular',
 ]
+
+ebnf_tests += ['more/'+chr(x) for x in xrange(ord('a'), ord('o')+1)]
 
 def blue(string):
 	return "\e[1;34m"+string+"\e[0m"

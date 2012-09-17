@@ -1,0 +1,4 @@
+S ::= F
+S ::= l S p F r
+F ::= a
+F ::= epsilon

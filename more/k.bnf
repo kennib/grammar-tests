@@ -1,0 +1,9 @@
+A ::= a
+A ::= epsilon
+S ::= A S1 e
+B ::= B1 d
+S1 ::= B
+S1 ::= epsilon
+S1 ::= b
+B1 ::= c
+B1 ::= epsilon

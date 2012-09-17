@@ -1,0 +1,4 @@
+S ::= A B
+A ::= epsilon
+A ::= A a
+B ::= b

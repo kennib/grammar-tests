@@ -1,0 +1,3 @@
+S ::= da na S1 batman !
+S1 ::= S1 na
+S1 ::= epsilon

@@ -1,0 +1,4 @@
+First:
+   A -> a epsilon
+Follow:
+   A -> $

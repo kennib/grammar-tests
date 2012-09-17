@@ -1,0 +1,8 @@
+First:
+  A -> a
+  B -> epsilon
+  S -> a
+Follow:
+  A -> $ a
+  B -> a
+  S -> $
