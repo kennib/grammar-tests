@@ -56,6 +56,8 @@ def red(string):
 def green(string):
 	return "\e[1;32m"+string+"\e[0m"
 
+width = max(map(len, calls.values())) + 3*max(map(len, grammar_tests+ebnf_tests))
+
 for i in range(1, 5):
     print blue('Testing question %d...' % i)
     if i == 4:
@@ -66,11 +68,12 @@ for i in range(1, 5):
     script = './question%d.py' % i
     for test in tests:
         call = calls[i] % {'script': script, 'name': 'tests/%s' % test}
-        print '  $ %s' % call
+        print ('  $ %s' % call).ljust(width+10),
         
         result = os.popen("bash -c '%s'" % call).read()
         
         if not result:
         	print green("passed")
         else:
+        	print red("failed")
         	print red(result)
