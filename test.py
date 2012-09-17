@@ -70,6 +70,7 @@ for i in range(1, 5):
         tests = grammar_tests
 
     script = './question%d.py' % i
+    passed = 0
     for test in tests:
         call = calls[i] % {'script': script, 'name': 'tests/%s' % test}
         print ('  $ %s' % call).ljust(width+10),
@@ -78,6 +79,16 @@ for i in range(1, 5):
         
         if not result:
         	print green("passed")
+        	passed += 1
         else:
         	print red("failed")
         	print red(result)
+    print
+
+    result = "  Passed %d of %d tests" % (passed, len(tests))
+    if passed == len(tests):
+        print green(result)
+    else:
+        print red(result)
+    
+    print
